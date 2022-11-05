@@ -77,6 +77,15 @@ function scene.draw()
     elseif vocPack=="rin" then
         gc.translate(820,280+12*sin(TIME()*.5))
         gc.draw(IMG.rinCH,nil,nil,nil,.8)
+    elseif vocPack=="nana" then
+        gc.translate(820,280+12*sin(TIME()*.5))
+        gc.draw(IMG.nana,nil,nil,nil,.8)
+    elseif vocPack=="suisei" then
+        gc.translate(820,280+12*sin(TIME()*.5))
+        gc.draw(IMG.suisei,nil,nil,nil,.8)
+    elseif vocPack=="PPT_Witch" then
+        gc.translate(820,280+12*sin(TIME()*.5))
+        gc.draw(IMG.PPT_Witch,nil,nil,nil,.8)
     end
     gc.pop()
 end

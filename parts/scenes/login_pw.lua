@@ -23,12 +23,8 @@ function scene.sceneInit()
 end
 
 function scene.keyDown(key,rep)
-    if rep then return true end
-    if key=='return' then
-        _login()
-    else
-        return true
-    end
+    if key~='return' or rep then return true end
+    _login()
 end
 
 scene.widgetList={

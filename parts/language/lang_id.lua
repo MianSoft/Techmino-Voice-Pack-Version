@@ -187,7 +187,6 @@ return {
     started="Bermain",
     joinRoom="$1 telah memasuki ruangan.",
     leaveRoom="$1 telah keluar dari ruangan.",
-    -- roomRemoved="Room was removed",
     ready="Siap",
     spectating="Menonton",
 

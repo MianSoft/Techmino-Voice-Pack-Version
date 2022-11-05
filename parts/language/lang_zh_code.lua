@@ -135,7 +135,6 @@ return {
     started="Room.Playing();",
     joinRoom="Room.Join($1);",
     leaveRoom="Room.Leave($1);",
-    roomRemoved="Room.Removed();",
     ready="Ready();",
     spectating="Room.Spectating();",
 

@@ -185,7 +185,6 @@ return {
     started="En juego",
     joinRoom="$1 entró a la sala.",
     leaveRoom="$1 salió de la sala.",
-    -- roomRemoved="Room was removed",
     ready="LISTO",
     spectating="Espectando",
 

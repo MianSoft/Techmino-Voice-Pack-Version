@@ -27,8 +27,8 @@ FNNS=SYSTEM:find'\79\83'-- What does FNSF stand for? IDK so don't ask me lol
 MOBILE=SYSTEM=='Android' or SYSTEM=='iOS'
 
 -- Global Vars & Settings
-SFXPACKS={'chiptune'}
-VOCPACKS={'miya','mono','xiaoya','miku'}
+SFXPACKS={'chiptune','PPT'}
+VOCPACKS={'miya','mono','xiaoya','miku','nana','suisei','PPT_Witch'}
 FIRSTLAUNCH=false
 DAILYLAUNCH=false
 
@@ -60,7 +60,7 @@ BGM.setMaxSources(5)
 VOC.setDiversion(.62)
 
 WIDGET.setOnChange(function()
-    if SCN.cur~='net_game' and SCN.cur~='custom_field' then
+    if SCN.cur~='custom_field' then
         local colorList=THEME.getThemeColor()
         if colorList then
             for _,W in next,SCN.scenes[SCN.cur].widgetList do
@@ -300,6 +300,9 @@ IMG.init{
     xiaoyaOmino='media/image/characters/xiaoya_Omino.png',
     mikuCH='media/image/characters/miku.png',
     rinCH='media/image/characters/rin.png',
+    PPT_Witch='media/image/characters/PPT_Witch.png',
+    nana='media/image/characters/nana.png',
+    suisei='media/image/characters/suisei.png',
     z={
         character='media/image/characters/z_character.png',
         screen1='media/image/characters/z_screen1.png',
@@ -354,6 +357,7 @@ SKIN.load{
     {name="kanji_chno",path='media/image/skin/kanji_chno.png'},
     {name="textbone_mrz",path='media/image/skin/textbone_mrz.png'},
     {name="coloredbone_mrz",path='media/image/skin/coloredbone_mrz.png'},
+    {name="PPT_Classic",path='media/image/skin/PPT_Classic.png'},
     {name="wtf",path='media/image/skin/wtf_mrz.png'},
 }
 
